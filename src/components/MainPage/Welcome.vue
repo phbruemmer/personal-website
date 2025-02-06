@@ -1,7 +1,7 @@
 <template>
-  <center>
+  <div class="center">
     <h1 class="typewriter">{{ message }}</h1>
-  </center>
+  </div>
 </template>
 
 <script>
@@ -10,7 +10,7 @@ export default {
   data() {
     return {
       message: "",
-      // Messages to display (in order)
+      /* Messages to display (in order) */
       messages: [
         "Welcome!",
         "Willkommen!",
@@ -73,7 +73,7 @@ export default {
 </script>
 
 <style scoped>
-center {
+.center {
   background-image: url("@/assets/image.jpg");
   background-size: cover;
   background-position: center;
@@ -91,13 +91,13 @@ center {
   font-size: 48px;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 4px solid #fff; /* The cursor */
-  animation: blink 0.7s step-end infinite; /* Blinking cursor animation */
+  border-right: 4px solid #fff;
+  animation: blink 0.7s step-end infinite;
 }
 
 @keyframes blink {
   50% {
-    border-color: transparent; /* Hide the cursor at 50% */
+    border-color: transparent;
   }
 }
 </style>

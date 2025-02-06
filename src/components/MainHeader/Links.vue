@@ -16,13 +16,15 @@ export default {
 
   methods: {
     scrollToTarget() {
-      const element = document.querySelector(this.reference);
+      const element = document.getElementById(this.reference);
 
       if (element) {
         element.scrollIntoView({
           behavior: "smooth",
           block: "start",
         });
+      } else {
+        console.error("Couldn't find: " + this.reference);
       }
     },
   },

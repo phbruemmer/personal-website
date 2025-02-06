@@ -1,6 +1,9 @@
 <template>
   <Welcome />
-  <SectionSeperator />
+  <SectionSeperator id="Home"> Home </SectionSeperator>
+  <SectionSeperator id="About"> About </SectionSeperator>
+  <SectionSeperator id="Projects"> Projects </SectionSeperator>
+  <SectionSeperator id="Prototypes"> Prototypes </SectionSeperator>
 </template>
 
 <script>

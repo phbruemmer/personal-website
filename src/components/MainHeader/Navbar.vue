@@ -1,9 +1,9 @@
 <template>
   <div class="navbar-container">
-    <Link reference="#">Home</Link>
-    <Link reference="#">About</Link>
-    <Link reference="#">Projects</Link>
-    <Link reference="#">Prototypes</Link>
+    <Link reference="Home">Home</Link>
+    <Link reference="About">About</Link>
+    <Link reference="Projects">Projects</Link>
+    <Link reference="Prototypes">Prototypes</Link>
   </div>
 </template>
 
