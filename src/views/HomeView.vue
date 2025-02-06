@@ -1,13 +1,74 @@
 <template>
   <center>
-    <h1>Hello world!</h1>
+    <h1 class="typewriter">{{ message }}</h1>
   </center>
 </template>
 
 <script>
 export default {
   name: "HomeView",
-  components: {},
+  data() {
+    return {
+      message: "",
+      // Messages to display (in order)
+      messages: [
+        "Welcome!",
+        "Willkommen!",
+        "Hello.",
+        "Hallo!",
+        "Bonjour!",
+        "Hola!",
+        "Ciao!",
+        "God dag!",
+        "Salut!",
+        "Bienvenidos!",
+        "Benvenuto!",
+        "Velkommen!",
+        "Guten Tag!",
+        "Buenas tardes!",
+        "Buongiorno!",
+      ],
+      currentMessageIndex: 0,
+    };
+  },
+  mounted() {
+    this.typeWriter();
+  },
+  methods: {
+    typeWriter() {
+      let i = 0;
+      let speed = 150;
+      const currentMessage = this.messages[this.currentMessageIndex];
+
+      const type = () => {
+        if (i < currentMessage.length) {
+          this.message += currentMessage.charAt(i);
+          i++;
+          setTimeout(type, speed);
+        } else {
+          setTimeout(this.deleteMessage, 2000);
+        }
+      };
+      type();
+    },
+    deleteMessage() {
+      let i = this.message.length;
+      let speed = 100;
+
+      const erase = () => {
+        if (i > 0) {
+          this.message = this.message.slice(0, i - 1);
+          i--;
+          setTimeout(erase, speed);
+        } else {
+          this.currentMessageIndex =
+            (this.currentMessageIndex + 1) % this.messages.length;
+          this.typeWriter();
+        }
+      };
+      erase();
+    },
+  },
 };
 </script>
 
@@ -24,9 +85,19 @@ center {
   justify-content: center;
 }
 
-h1 {
+.typewriter {
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 48px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #fff; /* The cursor */
+  animation: blink 0.7s step-end infinite; /* Blinking cursor animation */
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent; /* Hide the cursor at 50% */
+  }
 }
 </style>
