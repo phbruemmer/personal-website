@@ -1,4 +1,8 @@
-<template><h1>Hello world!</h1></template>
+<template>
+  <center>
+    <h1>Hello world!</h1>
+  </center>
+</template>
 
 <script>
 export default {
