@@ -1,6 +1,6 @@
 <template>
   <div class="logo-container">
-    <img src="@/assets/logo.png" />
+    <img src="@/assets/signature.png" alt="logo" />
   </div>
 </template>
 
@@ -12,10 +12,12 @@ export default {
 
 <style scoped>
 .logo-container {
-  margin: 10px;
+  margin-left: 20px;
+  display: flex;
+  width: 200px;
 }
 img {
-  width: 80px;
+  width: 150px;
   height: auto;
 }
 </style>

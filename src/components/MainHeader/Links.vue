@@ -31,6 +31,7 @@ export default {
 
 <style scoped>
 a {
+  margin-right: 80px;
   font-size: 16px;
   font-weight: 100;
   font-family: Arial, Helvetica, sans-serif;

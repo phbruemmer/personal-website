@@ -1,28 +1,27 @@
 <template>
   <div class="navbar-container">
-    <Link reference="Kombi">Home</Link>
-    <Link reference="Kombi">About</Link>
-    <Link reference="Kombi">Projects</Link>
-    <Link reference="Kombi">Prototypes</Link>
+    <Link reference="#">Home</Link>
+    <Link reference="#">About</Link>
+    <Link reference="#">Projects</Link>
+    <Link reference="#">Prototypes</Link>
   </div>
 </template>
 
 <script>
 import Link from "@/components/MainHeader/Links.vue";
-
 export default {
   name: "Navbar",
-  components: {
-    Link,
-  },
+  components: { Link },
 };
 </script>
 
 <style scoped>
 .navbar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 120px;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 </style>

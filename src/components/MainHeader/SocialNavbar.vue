@@ -1,34 +1,45 @@
 <template>
   <div class="social-container">
-    <Social
-      logo_path="https://th.bing.com/th/id/R.57e3e076a3eebb2b667d325b425e717a?rik=uHVdR7Kz%2bpTxVw&pid=ImgRaw&r=0"
-    />
+    <a href="https://github.com/phbruemmer"
+      ><img src="@/assets/socials/github.svg" />
+    </a>
 
-    <Social
-      logo_path="https://mir-s3-cdn-cf.behance.net/project_modules/disp/f8dc5431091769.5640f77be5837.png"
-    />
+    <a href="https://www.instagram.com/phbruemmer/">
+      <img src="@/assets/socials/instagram.svg" />
+    </a>
 
-    <Social
-      logo_path="https://th.bing.com/th/id/R.32c6d327568ffba8f0fe563a0471a1d0?rik=YEbiLMkUlcjKWA&pid=ImgRaw&r=0"
-    />
+    <a href="https://x.com/1Phbruemmer">
+      <img src="@/assets/socials/x.svg" />
+    </a>
+
+    <a href="https://discord.gg/a2h5feJ8aV">
+      <img src="@/assets/socials/discord.svg" />
+    </a>
   </div>
 </template>
 
 <script>
-import Social from "@/components/MainHeader/Social.vue";
-
 export default {
   name: "SocialNavbar",
-  components: {
-    Social,
-  },
 };
 </script>
 
 <style scoped>
 .social-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 15px;
+}
+
+img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  transition: transform 0.4s ease-in-out;
+}
+
+img:hover {
+  transform: rotate(360deg);
 }
 </style>
