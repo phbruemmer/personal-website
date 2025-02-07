@@ -33,6 +33,7 @@
 import Box from "@/components/MainPage/Box.vue";
 import DefaultLink from "@/components/DefaultLink.vue";
 import Visuals from "@/components/MainPage/Home/Visuals.vue";
+import DefaultSeperator from "@/components/Separators/DefaultSeperator.vue";
 
 export default {
   name: "Home",
@@ -40,6 +41,7 @@ export default {
     Box,
     DefaultLink,
     Visuals,
+    DefaultSeperator,
   },
 };
 </script>
