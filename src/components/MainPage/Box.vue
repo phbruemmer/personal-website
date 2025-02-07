@@ -58,7 +58,7 @@ export default {
   padding: 20px;
   background-color: #fffbf3;
   border-radius: 32px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   font-family: "Arial", sans-serif;
   transition: all 0.3s ease-in-out;
 }
