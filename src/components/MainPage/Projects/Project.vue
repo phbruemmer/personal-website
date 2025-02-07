@@ -78,5 +78,6 @@ p {
   line-height: 1.5;
   text-align: center;
   margin-right: 20px;
+  margin-left: 20px;
 }
 </style>
