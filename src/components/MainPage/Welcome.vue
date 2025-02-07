@@ -1,6 +1,9 @@
 <template>
-  <div class="center">
-    <h1 class="typewriter">~ {{ message }}</h1>
+  <div class="container">
+    <div class="center">
+      <h1 class="typewriter">~ {{ message }}</h1>
+      <img src="@/assets/vibing_cat.gif" alt="" class="hidden-img" />
+    </div>
   </div>
 </template>
 
@@ -103,5 +106,22 @@ export default {
 
 h1:hover {
   cursor: default;
+}
+
+.container {
+  position: relative;
+}
+
+.hidden-img {
+  width: 60px;
+  position: absolute;
+  top: -35px;
+  right: 20%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.center:hover .hidden-img {
+  opacity: 0.6;
 }
 </style>

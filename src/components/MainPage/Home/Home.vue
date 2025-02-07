@@ -1,12 +1,12 @@
 <template>
-  <Box title="Welcome!">
+  <Box title="~ Welcome ~">
     Hi, I'm <i>Philip</i>, a self-taught developer from <b>Germany</b>,
     passionate about problem-solving and computers in general. Furthermore, I
     enjoy working on challenging projects and exploring a variety of
     technologies.
   </Box>
 
-  <Box title="What I do">
+  <Box title="~ What I do ~">
     As a self-taught developer, I currently focus on my own projects, but I'm
     always seeking new challenges that help me grow and collaborate with others
     in the ever-evolving world of tech. Explore my
