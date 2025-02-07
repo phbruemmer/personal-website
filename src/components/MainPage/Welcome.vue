@@ -1,6 +1,6 @@
 <template>
   <div class="center">
-    <h1 class="typewriter">{{ message }}</h1>
+    <h1 class="typewriter">~ {{ message }}</h1>
   </div>
 </template>
 
@@ -12,21 +12,21 @@ export default {
       message: "",
       /* Messages to display (in order) */
       messages: [
-        "Welcome!",
-        "Willkommen!",
-        "Hello.",
-        "Hallo!",
-        "Bonjour!",
-        "Hola!",
-        "Ciao!",
-        "God dag!",
-        "Salut!",
-        "Bienvenidos!",
-        "Benvenuto!",
-        "Velkommen!",
-        "Guten Tag!",
-        "Buenas tardes!",
-        "Buongiorno!",
+        "Welcome! ~",
+        "Willkommen! ~",
+        "Hello. ~",
+        "Hallo! ~",
+        "Bonjour! ~",
+        "Hola! ~",
+        "Ciao! ~",
+        "God dag! ~",
+        "Salut! ~",
+        "Bienvenidos! ~",
+        "Benvenuto! ~",
+        "Velkommen! ~",
+        "Guten Tag! ~",
+        "Buenas tardes! ~",
+        "Buongiorno! ~",
       ],
       currentMessageIndex: 0,
     };
@@ -99,5 +99,9 @@ export default {
   50% {
     border-color: transparent;
   }
+}
+
+h1:hover {
+  cursor: default;
 }
 </style>
