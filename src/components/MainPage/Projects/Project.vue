@@ -38,6 +38,12 @@ export default {
   align-items: center;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-container:hover {
+  transform: scale(1.025);
+  cursor: pointer;
 }
 
 .left-container {

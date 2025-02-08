@@ -1,18 +1,45 @@
 <template>
   <div class="about-container">
     <div class="left-container">
-      <h1>test</h1>
+      <Path />
     </div>
     <div class="right-container">
-      <h1>test</h1>
+      <Box title="Programming Languages">
+        <div class="centered">
+          <div class="row">
+            <Diagram progress="78">Python</Diagram>
+            <Diagram progress="52">C++</Diagram>
+          </div>
+        </div>
+        <a href="">Show more</a>
+      </Box>
+
+      <Box title="Software Development Areas">
+        <div class="centered">
+          <div class="row">
+            <Diagram progress="68">Networking & communication</Diagram>
+            <Diagram progress="45">Game Development</Diagram>
+          </div>
+        </div>
+        <a href="">Show more</a>
+      </Box>
     </div>
   </div>
+  <button>More</button>
 </template>
 
 <script>
+import Diagram from "@/components/MainPage/About/Diagram.vue";
+import Box from "@/components/MainPage/Box.vue";
+import Path from "@/components/MainPage/About/Path.vue";
+
 export default {
   name: "About",
-  components: {},
+  components: {
+    Diagram,
+    Box,
+    Path,
+  },
 };
 </script>
 
@@ -20,5 +47,29 @@ export default {
 .about-container {
   display: flex;
   justify-content: space-around;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+a {
+  color: #616161;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
