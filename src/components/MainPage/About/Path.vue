@@ -50,7 +50,7 @@ circle:hover {
 }
 
 svg {
-  height: 100vh;
+  height: 100%;
   width: auto;
 }
 </style>

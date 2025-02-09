@@ -25,7 +25,6 @@
       </Box>
     </div>
   </div>
-  <button>More</button>
 </template>
 
 <script>
@@ -47,6 +46,19 @@ export default {
 .about-container {
   display: flex;
   justify-content: space-around;
+  align-items: stretch;
+}
+
+.left-container,
+.right-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-container {
+  gap: 20px;
 }
 
 .centered {

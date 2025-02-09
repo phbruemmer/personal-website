@@ -63,6 +63,10 @@ export default {
   transition: all 0.3s ease-in-out;
 }
 
+.box-container:hover {
+  transform: scale(1.01);
+}
+
 .box-title {
   font-size: 20px;
   color: #333333d1;
