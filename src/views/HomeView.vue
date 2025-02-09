@@ -1,4 +1,5 @@
 <template>
+  <MainHeader />
   <Welcome />
   <SectionSeperator id="Home"> Home </SectionSeperator>
   <Home />
@@ -12,6 +13,7 @@
 </template>
 
 <script>
+import MainHeader from "@/components/MainHeader/MainHeader.vue";
 import Welcome from "@/components/MainPage/Welcome.vue";
 import SectionSeperator from "@/components/Separators/SectionSeperator.vue";
 import Home from "@/components/MainPage/Home/Home.vue";
@@ -23,6 +25,7 @@ import Footer from "@/components/MainPage/Footer/Footer.vue";
 export default {
   name: "HomeView",
   components: {
+    MainHeader,
     Welcome,
     SectionSeperator,
     Home,
