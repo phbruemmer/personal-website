@@ -32,7 +32,7 @@
 <script>
 import Box from "@/components/MainPage/Box.vue";
 import DefaultLink from "@/components/DefaultLink.vue";
-import Visuals from "@/components/MainPage/Home/Visuals.vue";
+import Visuals from "@/components/MainPage/Visuals.vue";
 import DefaultSeperator from "@/components/Separators/DefaultSeperator.vue";
 
 export default {

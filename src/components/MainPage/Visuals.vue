@@ -1,12 +1,12 @@
 <template>
   <div class="gallery-container">
-    <div class="image-wrapper">
+    <div class="image-wrapper" :style="{ height: imageHeight }">
       <img :src="first_path" class="image" />
     </div>
-    <div class="image-wrapper">
+    <div class="image-wrapper" :style="{ height: imageHeight }">
       <img :src="second_path" class="image" />
     </div>
-    <div class="image-wrapper">
+    <div class="image-wrapper" :style="{ height: imageHeight }">
       <img :src="third_path" class="image" />
     </div>
   </div>
@@ -28,9 +28,10 @@ export default {
       type: String,
       required: true,
     },
-  },
-  mounted() {
-    console.log(this.fir);
+    imageHeight: {
+      type: String,
+      default: "300px",
+    },
   },
 };
 </script>
@@ -41,13 +42,11 @@ export default {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin-top: 20px;
 }
 
 .image-wrapper {
   position: relative;
   width: 150px;
-  height: 300px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);

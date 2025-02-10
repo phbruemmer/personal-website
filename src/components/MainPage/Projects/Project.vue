@@ -1,5 +1,5 @@
 <template>
-  <div class="project-container">
+  <div class="project-container" :style="{ backgroundColor: bgColor }">
     <div class="left-container">
       <img :src="path" alt="Project Image" />
     </div>
@@ -25,6 +25,10 @@ export default {
       type: String,
       required: false,
     },
+    bgColor: {
+      type: String,
+      default: "#fce8e8",
+    },
   },
 };
 </script>
@@ -34,7 +38,6 @@ export default {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
-  background-color: #fce8e8;
   align-items: center;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
