@@ -5,7 +5,7 @@
     To test the function enter '<i>A1-B2-C3</i>'.
 
     <div class="small-box">
-      <input type="text" />
+      <input type="text" placeholder="A1-B2-C3" />
       <button>>></button>
     </div>
   </LargeBox>

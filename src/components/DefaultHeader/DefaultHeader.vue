@@ -1,24 +1,21 @@
 <template>
   <div class="header-container">
+    <!-- Back -->
+    <RouterLinks reference="/">Back</RouterLinks>
+
     <!-- Logo -->
     <Logo />
-    <!-- Navbar -->
-    <Navbar />
-    <!-- Links / Socials -->
-    <SocialNavbar />
   </div>
 </template>
 <script>
 import Logo from "@/components/Defaults/Logo.vue";
-import Navbar from "@/components/MainHeader/Navbar.vue";
-import SocialNavbar from "@/components/MainHeader/SocialNavbar.vue";
+import RouterLinks from "@/components/Defaults/RouterLinks.vue";
 
 export default {
   name: "MainHeader",
   components: {
     Logo,
-    Navbar,
-    SocialNavbar,
+    RouterLinks,
   },
 };
 </script>
@@ -26,8 +23,7 @@ export default {
 <style>
 .header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  pad: 10px;
 }
 </style>

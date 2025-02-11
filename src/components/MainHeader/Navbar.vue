@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Link from "@/components/MainHeader/Links.vue";
+import Link from "@/components/Defaults/Links.vue";
 export default {
   name: "Navbar",
   components: { Link },

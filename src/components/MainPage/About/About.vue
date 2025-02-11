@@ -35,7 +35,7 @@
       :second_path="require('@/assets/images/image (12).jpg')"
       :third_path="require('@/assets/images/image (10).jpg')"
     />
-    <button>Show more!</button>
+    <button @click="$router.push('/about')">Show more!</button>
 
     <Visuals
       image-height="18vh"
