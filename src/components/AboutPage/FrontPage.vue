@@ -20,7 +20,7 @@ h1 {
 
 .center {
   margin-top: 2vh;
-  background-image: url("@/assets/About/code.png");
+  background-image: url("@/assets/images/image (12).jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,14 +31,12 @@ h1 {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("@/assets/About/code.png");
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 -10px 20px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease-in-out;
 }
 
 .center:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 -10px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 -10px 20px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
