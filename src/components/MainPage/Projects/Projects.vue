@@ -14,16 +14,6 @@
     >
   </LargeBox>
 
-  <div class="seperator">
-    <div class="left-container">
-      <img src="@/assets/coffee.png" alt="" />
-    </div>
-
-    <div class="right-container">
-      <img src="@/assets/coffee.png" alt="" />
-    </div>
-  </div>
-
   <LargeBox title="~ current projects ~">
     <Project
       title="personal website"
@@ -50,25 +40,6 @@ export default {
 </script>
 
 <style scoped>
-.seperator {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 60%;
-  position: relative;
-  margin-top: 30px;
-}
-
-.seperator::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  border-top: 3px dotted #b19873b5;
-}
-
 .left-container {
   background-color: #ead4b2;
   padding: 10px;
